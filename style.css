@@ -1,0 +1,143 @@
+body{
+    background-image: url(https://colorlib.com/etc/lf/Login_v5/images/bg-01.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        '. c ';    
+}
+.div1{
+    width: 390px;
+    height: 390px;
+    position: relative;
+    grid-area: c;
+    margin: 5px;
+}
+form label{
+    font-family: segoe script, cursive, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: red;
+    margin-top: 20%;
+}
+
+
+.divEmail, .divPas, .divButton{
+    position: absolute;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    transition: z-index 1s, box-shadow 2s, width 2s, height 2s, background-color 2s;
+}
+
+.divEmail{
+    height: 65%;
+    width: 65%;
+    background: linear-gradient(0.09turn,#8f3fa6, #5857a2, #3ccbf6);
+    z-index: 3;
+    box-shadow: 1px -5px 16px 2px rgb(60 186 246 / 50%);
+}
+
+.divPas{
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    width: 60%;
+    background: linear-gradient(0.89turn,#6dbb7a, #8dad93, #3cbaf6);
+    z-index: 2;
+    box-shadow: 1px -5px 16px 2px rgb(60 186 246 / 50%);   
+}
+
+.divButton{
+    bottom: 5%;
+    left: 11%;
+    height: 30%;
+    width: 30%;
+    background-color: rgb(47 160 148);
+    box-shadow: 1px -5px 6px 2px rgb(50 66 16 / 50%),
+                -1px 1px 2px 2px rgb(50 66 16 / 50%);
+    z-index: 1;
+   
+}
+
+
+/*.a:hover,*/
+.divEmail:focus-within{
+    z-index: 5;
+    height: 70%;
+    width: 70%;
+    background-color: rgb(11 241 11 / 0.7);
+    box-shadow: 1px 3px 2px 7px rgb(60 186 246 / 50%), 
+                3px 2px 1px 2px rgb(60 186 246 / 30%);
+}
+
+/*.b:hover,*/
+.divPas:focus-within{
+    z-index: 5;
+    height: 70%;
+    width: 70%;
+    box-shadow: -3px -6px 2px 2px rgb(60 186 246 / 50%), 
+                -1px 1px 1px 2px rgb(60 186 246 / 50%);
+}
+.divButton:hover{
+    z-index: 6;
+    height: 33%;
+    width: 33%;
+    box-shadow: 7px -5px 2px 2px rgb(50 66 16 / 50%),
+                -1px 1px 1px 2px rgb(50 66 16 / 50%);
+}
+.but{
+    font-family: cursive, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 0;
+    background: #65c4da;;
+    color: #ec0404;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.but:hover{
+    background-color: rgb(18 192 220);
+}
+.but:focus {
+
+    box-shadow: 0 0 0 2px #09867c7c;
+  }
+
+@media (max-width: 500px) {
+      
+    .grid{
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: auto;
+    }
+    .div1 {
+        width: 290px;
+        height: 290px;
+        position: relative;
+        margin: 5px;
+        transition: width 2s, height 2s;
+        }
+    form input{
+        width: 80%;
+    }
+    .but{
+        padding: 4px 13px 4px 3px;
+        margin-left: 9px;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,69 @@
+.button {
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 1px 4px 1px #19449a;
+  }
+  .button:hover {
+    background: #7b93c7;
+  }
+  
+
+.button2:disabled  {
+  border: 1px solid #666; 
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 1px 4px 1px #19449a;
+}
+.button3{
+  color: #fff;
+  background-color: #d9534f;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;  
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 1px 4px 1px #a53430;;
+}
+
+.button3:active,
+.button:active,
+.danger:active{
+  box-shadow: 0px 0px 0px;
+  position:relative;
+  transition: all 40ms linear;
+  transform: translateY(4px);
+}
+
+.danger{
+    border: 0;
+    border-radius: 5px;
+    background: red;
+    color: rgb(0, 0, 0);
+    padding: 0px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 1px 4px 1px #741a16;
+}
+.png{
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url( 'istock.png' );
+  background-size: 48px 48px;
+  height: 48px;  
+  width: 48px;
+}
+
+
+
+
