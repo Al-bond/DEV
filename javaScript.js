@@ -87,6 +87,17 @@ let testData = [1, 2, 1990, 85, 24, "Vasya", "colya@example.com",
                     "Rafshan", "ashan@example.com", true, false];
 
 function array_find(arr, any){
+  
+  if(any.indexOf('/')===0){
+    let a = any.split('/');
+
+    reg = new RegExp(a[1], 'i');
+    return arr.find(item=> {
+      if(String(item).match(reg)){
+        return item
+      }
+    })
+  }
   return arr.find(item=> String(item).includes(any))
    
 }
